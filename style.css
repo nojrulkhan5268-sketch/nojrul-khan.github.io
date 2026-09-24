@@ -110,3 +110,12 @@ body {
   background: #080909 !important;
   color: #ffffff !important;
 }
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+body {
+  background: #080909 !important;
+  color: #ffffff !important;
+}
