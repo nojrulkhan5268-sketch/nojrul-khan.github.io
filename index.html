@@ -9,6 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+<style>
+.posts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:32px}
+.post-card{background:#111313;border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden}
+.post-card>img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.post-card-body{padding:22px}
+.post-date{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;opacity:.62;margin-bottom:10px}
+.post-card h3{margin:0 0 12px;font-size:1.35rem}
+.post-content p{margin:.55rem 0;line-height:1.75;opacity:.88}
+.posts-empty{margin-top:24px;opacity:.65}
+@media(max-width:700px){.posts-grid{grid-template-columns:1fr}}
+</style>
+
 </head>
 <body>
   <header class="site-header">
@@ -192,7 +205,17 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
+    <section id="blog" class="section">
+  <div class="section-head reveal">
+    <p class="eyebrow">BLOG & UPDATES</p>
+    <h2>Latest Writing & Photos</h2>
+    <p>New posts and photos will appear here automatically when published from the mobile admin page.</p>
+  </div>
+
+  <div id="posts-grid" class="posts-grid"></div>
+  <p id="posts-empty" class="posts-empty">No posts yet. New writing and photos will appear here.</p>
+</section>
+<section id="contact" class="section contact-section">
       <div class="contact-card reveal">
         <div>
           <p class="eyebrow">LET'S CONNECT</p>
